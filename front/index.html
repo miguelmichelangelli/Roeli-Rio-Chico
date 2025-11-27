@@ -1,18 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Roeli | Rio Chico</title>
 </head>
 <body>
-    <h1>Bienvenido a Roeli | Rio Chico</h1>
-    <h3>Por favor carga tu comprobante de pago</h3>
-    <form action="http://localhost:3000/enviar-aviso" method="POST">
-        
-        <button type="submit">Enviar Correo "Enviado"</button>
 
-    </form>
+    <div class="container">
+        
+        <header class="header">
+            <a href="#" class="brand">
+                <div class="logo"></div> Roeli | Rio Chico
+            </a>
+            <nav class="nav">
+                <a href="#">Inicio</a>
+                <a href="#">Soporte</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-card">
+                <h1>Bienvenido al Portal de Pagos</h1>
+                <p>Gestiona tus comprobantes de forma rápida y segura.</p>
+            </div>
+        </section>
+
+        <main class="grid" style="display: flex; justify-content: center; width: 100%;">
+            
+            <div class="card" style="width: 100%; max-width: 450px;">
+                <h3>Subir Comprobante</h3>
+                <p style="margin-bottom: 1rem;">Haz clic abajo para notificar tu pago.</p>
+                
+                <form action="http://localhost:3000/enviar-aviso" method="POST" class="form-row">
+                    <button type="submit" class="btn center" style="width: 100%;">
+                        Enviar Correo
+                    </button>
+                </form>
+            </div>
+
+            </main>
+
+        <footer class="footer">
+            <span>© 2025 Roeli - Rio Chico</span>
+            <span>Sistema v1.0</span>
+        </footer>
+
+    </div>
+
 </body>
 </html>
