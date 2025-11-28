@@ -34,8 +34,12 @@
                 <p style="margin-bottom: 1rem;">Haz clic abajo para notificar tu pago.</p>
                 
                 <form action="http://localhost:3000/enviar-aviso" method="POST" class="form-row">
+                    <input type="text" name="nombre" class="input" placeholder="Nombre Completo" required>
+
+                    <input type="text" name="cedula" class="input" placeholder="Cédula de Identidad" required>
+
                     <button type="submit" class="btn center" style="width: 100%;">
-                        Enviar Correo
+                        Enviar Comprobante
                     </button>
                 </form>
             </div>
